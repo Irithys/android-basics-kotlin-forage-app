@@ -69,9 +69,10 @@ class ForageableDetailFragment : Fragment() {
         // TODO: Observe a forageable that is retrieved by id, set the forageable variable,
         //  and call the bind forageable method
         viewModel.getForageable(id).observe(this.viewLifecycleOwner) { selectedItem ->
+            forageable=selectedItem
             bindForageable()
         }
-        
+
     }
 
     private fun bindForageable() {

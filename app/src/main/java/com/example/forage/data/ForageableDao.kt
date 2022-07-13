@@ -16,6 +16,7 @@
 package com.example.forage.data
 
 import androidx.room.*
+import com.example.forage.model.Forageable
 import kotlinx.coroutines.flow.Flow
 
 /**
